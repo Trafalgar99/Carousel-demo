@@ -1,0 +1,127 @@
+/* General setup */
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0 auto;
+  min-width: 1000px;
+  max-width: 1400px;
+}
+
+/* Layout */
+
+section {
+  float: left;
+  width: 50%;
+}
+
+aside {
+  float: left;
+  width: 30%;
+}
+
+nav {
+  float: left;
+  width: 20%;
+}
+
+footer {
+  clear: both;
+}
+
+header,
+section,
+aside,
+nav,
+footer {
+  padding: 20px;
+}
+
+/* header and footer */
+
+header,
+footer {
+  border-top: 5px solid #a66;
+  border-bottom: 5px solid #a66;
+}
+
+/* WRITE YOUR CODE BELOW HERE */
+
+/* text */
+body {
+  font-size: 10px;
+  line-height: 2em;
+  letter-spacing: 0.5px;
+  word-spacing: 0.3em;
+}
+
+header {
+  text-align: center;
+  font-size: 2em;
+  color: #2f3542;
+  letter-spacing: 0.5em;
+}
+
+section h2 + p {
+  text-indent: 20px;
+}
+
+/* link */
+
+a {
+  color: rgb(170, 102, 102);
+}
+a:hover,
+a:focus {
+  text-decoration: none;
+}
+a:active {
+  background-color: #ff6348;
+}
+a[href*="https"] {
+  background: url("https://mdn.mozillademos.org/files/12982/external-link-52.png")
+    no-repeat 100% 0;
+  background-size: 16px 16px;
+  padding-right: 19px;
+  /* border: 1px red solid; */
+}
+
+/* list */
+ul,
+ol {
+  margin-top: 25px;
+  margin-bottom: 25px;
+}
+ul li,
+ol li {
+  /* border: red 1px solid; */
+  line-height: 2em;
+}
+
+aside ul li {
+  line-height: 3em;
+  list-style-type: square;
+  /* border: 1px solid red; */
+}
+nav ul li {
+  list-style-type: none;
+  border: solid rgb(170, 102, 102) 1.5px;
+  padding: 15px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-weight: bold;
+}
+nav ul li a {
+  text-decoration: none;
+}
+nav ul li:hover {
+  /* text-decoration: none; */
+  cursor: pointer;
+  background: #ced6e0;
+}
+/* footer */
+footer p {
+  text-align: center;
+}
