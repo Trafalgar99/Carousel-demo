@@ -1,0 +1,40 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+}
+div {
+  font-size: 4em;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #ff4757;
+}
+div > span {
+  display: inline-block;
+  position: relative;
+  padding: 10px;
+}
+.color {
+  animation-name: color;
+  animation-duration: 0.5s;
+  animation-iteration-count: 2;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+@keyframes color {
+  50% {
+    color: #ff6348;
+    transform: scale(2);
+  }
+  to {
+    color: #eccc68;
+    transform: scale(0.5);
+  }
+}
